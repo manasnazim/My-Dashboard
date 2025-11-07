@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --bg: #f5f5f5;
+  --text: #333;
+  --accent: #0984e3;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--accent);
+  color: white;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer p a{
+  
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  height: auto;
+}
+
+
+.home .intro {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.clock h3{
+  margin-top: 200px;
+}
+
+#clock-display {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+
+.skills .skill {
+  margin-bottom: 20px;
+}
+.bar {
+  background: #ddd;
+  height: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  background: var(--accent);
+  width: var(--level);
+  animation: grow 1.5s ease;
+}
+@keyframes grow {
+  from { width: 0; }
+  to { width: var(--level); }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.filter button {
+  margin: 5px;
+  padding: 6px 10px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter button:hover {
+  background: #74b9ff;
+}
+
+.dark {
+  --bg: #222;
+  --text: #eee;
+  --accent: #6c5ce7;
+}

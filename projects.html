@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Anas Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main class="projects">
+    <div class="filter">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('app')">App</button>
+    </div>
+
+    <div class="project-card" data-type="web">
+      <h2>Responsive Website – Responsive site connected with DataBase</h2>
+      <p><b>Description:</b> Create User by sigin and then login into the site.</p>
+      <p><b>Technologies:</b> HTML, CSS, PHP, MySQL</p>
+      <p><b>Problem:</b> Small Scale.</p>
+      <p><b>Unique Proposition:</b> Only allow users to enter that have login.</p>
+      <p><b>Competitors:</b> Default web pages.</p>
+      <a href="https://github.com/manasnazim/Website-with-connected-database.git">View Demo</a>
+    </div>
+
+    <div class="project-card" data-type="app">
+      <h2>Final Year Project – Task Managment System</h2>
+      <p><b>Description:</b> This is a program where you assign tasks.</p>
+      <p><b>Technologies:</b> C++</p>
+      <p><b>Problem:</b> Manual assigning task usally overlap with each other.</p>
+      <p><b>Unique Proposition:</b> You can assign task to every one and it didn't clash with other.</p>
+      <p><b>Competitors:</b> Traditional btask assigning systems.</p>
+      <a href="https://github.com/manasnazim/Task-Managment-System-C-.git">View on GitHub</a>
+    </div>
+
+    
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://www.linkedin.com/in/mohammad-anas-nazim-4710a428a/">LinkdIn</a>
+      <a href="https://github.com/manasnazim">GitHub</a>
+      <a href="https://www.instagram.com/anaskamboh15/">Instagram</a>
+    </p>  </footer>
+</body>
+</html>
